@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --color-uniqhbaunderground: #075F46;
+  --color-uniqhbaunderground-2: #178E3B;
+}
