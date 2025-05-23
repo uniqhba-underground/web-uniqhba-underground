@@ -7,6 +7,6 @@
   title="{SiteName} | Event"
 />
 
-<div class="container min-h-[90dvh] mx-auto">
+<div class="container min-h-[900px] mx-auto">
   <h1>Event</h1>
 </div>

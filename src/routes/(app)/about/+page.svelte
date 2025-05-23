@@ -7,6 +7,6 @@
   title="{SiteName} | Tentang"
 />
 
-<div class="container min-h-[90dvh] mx-auto">
+<div class="container min-h-[700px] mx-auto">
   <h1>Tentang</h1>
 </div>

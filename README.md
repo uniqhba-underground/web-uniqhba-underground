@@ -1,38 +1,15 @@
-# sv
+# Website Resmi UNIQHBA Underground
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+UNIQHBA Underground adalah komunitas IT mahasiswa Universitas Qamarul Huda badaruddin Bagu. Komunitas ini di bentuk untuk mahasiswa yang tertarik dan ingin memperdalam pengetahuan, skill, jejaring sosial di bidang Teknologi Informasi, entah di bidang Programming, Desain Grafis, Cyber Security, dan salainnya. Kita belajar, berbagi informasi, berdiskusi, serta membantu satu sama lain dalam memahami ilmu - ilmu di bidang IT.
 
-## Creating a project
+## ✨ Visi
 
-If you're seeing this, you've probably already done this step. Congrats!
+Menjadi komunitas IT yang berkontribusi dalam pengembangan teknologi dan inovasi, serta mendorong anggotanya untuk menjadi talenta digital yang unggul, inovatif, dan berdedikasi untuk kemajuan masyarakat dan negara.
 
-```bash
-# create a new project in the current directory
-npx sv create
+## 💥 Misi
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- Menyediakan platform diskusi dan belajar mengenai Teknologi Informasi
+- Mengadakan pelatihan, workshop, dan webinar untuk memperdalam keterampilan teknis mahasiswa.
+- Membantu anggota membangun koneksi dengan profesional di bidang IT.
+- Menyediakan bantuan dan bimbingan dalam menyelesaikan tugas dan proyek akademis terkait Teknologi Informasi.
+- Menyediakan ruang untuk berbagi ide dan inovasi dalam Teknologi Informasi.

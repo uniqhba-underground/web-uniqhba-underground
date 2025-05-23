@@ -9,7 +9,7 @@
 
 <Head />
 
-<div class="container min-h-[90dvh] mx-auto flex flex-col gap-5">
+<div class="container min-h-[900px] mx-auto flex flex-col gap-5">
   <Jumbotron />
   <AboutUs />
   <Gallery />
