@@ -47,7 +47,7 @@
     <div class="flex flex-row items-center gap-16">
       <a href="/" class="w-fit h-fit">
         <img
-          src="/img/logo.png"
+          src="/icons/icon-text.svg"
           alt="UNIQHBA Underground"
           class="w-40 h-auto"
         />

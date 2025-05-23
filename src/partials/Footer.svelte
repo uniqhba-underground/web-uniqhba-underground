@@ -97,8 +97,15 @@
   ]
 </script>
 
-<footer class="bg-uniqhbaunderground flex flex-col text-slate-100 w-full">
-  <div class="container mx-auto flex flex-col gap-5 px-5 md:px-0">
+<footer class="bg-uniqhbaunderground flex flex-col text-slate-100 w-full relative">
+  <div class="w-[450px] h-auto absolute z-0 md:top-10 md:right-3 top-3/7 -right-7 translate-x-1/6">
+    <img
+      src="/icons/main-logo-darker.png"
+      alt=""
+      class="w-full h-auto"
+    />
+  </div>
+  <div class="container mx-auto flex flex-col gap-5 px-5 md:px-0 relative">
     <div class="w-fit h-fit mt-8">
       <img
         src="/icons/logo-text-white.png"
