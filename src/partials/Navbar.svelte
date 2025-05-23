@@ -3,11 +3,10 @@
   import {
     PathName,
     PathHome,
-    PathTentang,
-    PathKontak,
-
-	PathEvent
-
+    PathAbout,
+    PathContact,
+    PathEvents,
+    PathServices,
   } from '@/state/page';
   import { browser } from '$app/environment';
   import { writable } from 'svelte/store';
@@ -23,7 +22,18 @@
   $effect(() => {
     window.location.pathname;
     $PathName = window.location.pathname;
-  })
+  });
+
+  const navMenuMobile: {
+    name: string;
+    link: string;
+  }[] = [
+    { name: 'Beranda', link: PathHome },
+    { name: 'Tentang', link: PathAbout },
+    { name: 'Layanan', link: PathServices },
+    { name: 'Event', link: PathEvents },
+    { name: 'Kontak', link: PathContact },
+  ];
 </script>
 
 <button
@@ -53,21 +63,38 @@
           <span class="w-[70px] h-[3px] {$PathName === PathHome ? 'bg-uniqhbaunderground' : 'bg-transparent'}"></span>
         </a>
         <a
-          onclick={() => $PathName = PathTentang}
-          href={PathTentang}
+          onclick={() => $PathName = PathAbout}
+          href={PathAbout}
           class="w-fit h-fit hover:text-uniqhbaunderground cursor-pointer flex flex-col gap-1.5 justify-center items-center
-          {$PathName === PathTentang ? 'text-uniqhbaunderground' : ''}"
+          {$PathName === PathAbout ? 'text-uniqhbaunderground' : ''}"
         >
           <span>Tentang</span>
-          <span class="w-[70px] h-[3px] {$PathName === PathTentang ? 'bg-uniqhbaunderground' : 'bg-transparent'}"></span>
+          <span class="w-[70px] h-[3px] {$PathName === PathAbout ? 'bg-uniqhbaunderground' : 'bg-transparent'}"></span>
+        </a>
+        <a
+          onclick={() => $PathName = PathServices}
+          href={PathServices}
+          class="w-fit h-fit hover:text-uniqhbaunderground cursor-pointer flex flex-col gap-1.5 justify-center items-center
+          {$PathName === PathServices ? 'text-uniqhbaunderground' : ''}"
+        >
+          <span>Layanan</span>
+          <span class="w-[70px] h-[3px] {$PathName === PathServices ? 'bg-uniqhbaunderground' : 'bg-transparent'}"></span>
+        </a>
+        <a
+          onclick={() => $PathName = PathEvents}
+          href={PathEvents}
+          class="w-fit h-fit hover:text-uniqhbaunderground cursor-pointer flex flex-col gap-1.5 justify-center items-center
+          {$PathName === PathEvents ? 'text-uniqhbaunderground' : ''}"
+        >
+          <span>Event</span>
+          <span class="w-[70px] h-[3px] {$PathName === PathEvents ? 'bg-uniqhbaunderground' : 'bg-transparent'}"></span>
         </a>
       </nav>
     </div>
     <a
-      onclick={() => $PathName = PathKontak}
-      href="/kontak"
-      class="md:block hidden w-fit h-fit hover:text-uniqhbaunderground cursor-pointer py-2 px-5 rounded-full
-      {$PathName === PathKontak ? 'text-uniqhbaunderground-2 bg-uniqhbaunderground-2/20' : ''}"
+      onclick={() => $PathName = PathContact}
+      href={PathContact}
+      class="md:block hidden w-fit h-fit cursor-pointer py-2 px-5 rounded-full text-white bg-uniqhbaunderground hover:bg-uniqhbaunderground/90 text-sm"
     >
       Kontak Kami
     </a>
@@ -81,19 +108,19 @@
   </div>
   <aside
     class="{$isShowMenu ? 'left-0' : '-left-[250px]'} duration-150 py-6 px-6 h-screen w-[250px] bg-white rounded-r-xl
-    fixed z-50 top-0 bottom-0 flex flex-col gap-6">
-    <a class="hover:text-uniqhbaunderground {$PathName === PathHome ? 'text-uniqhbaunderground' : ''} px-2" href="/" onclick={()=> {
-      $isShowMenu = false;
-      $PathName = PathHome;
-    }}>Beranda</a>
-    <a class="hover:text-uniqhbaunderground {$PathName === PathTentang ? 'text-uniqhbaunderground' : ''} px-2" href="/tentang" onclick={()=> {
-      $isShowMenu = false;
-      $PathName = PathTentang;
-    }}>Tentang Kami</a>
-    <a class="hover:text-uniqhbaunderground {$PathName === PathKontak ? 'text-uniqhbaunderground' : ''} px-2" href="/kontak" onclick={()=> {
-      $isShowMenu = false;
-      $PathName = PathKontak;
-    }}>Kontak</a>
+    fixed z-50 top-0 bottom-0 flex flex-col gap-5">
+    {#each navMenuMobile as nav}
+      <a
+        class="hover:text-uniqhbaunderground {$PathName === nav.link ? 'text-uniqhbaunderground-2 bg-emerald-400/20' : ''} px-4 py-1 rounded-full w-fit"
+        href={nav.link}
+        onclick={()=> {
+          $isShowMenu = false;
+          $PathName = nav.link;
+        }}
+      >
+        {nav.name}
+      </a>
+    {/each}
   </aside>
 </div>
 
