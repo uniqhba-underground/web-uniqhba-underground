@@ -43,7 +43,7 @@
 </button>
 
 <div id="top" class="w-full h-fit flex flex-row items-center justify-center py-6">
-  <div class="px-5 container flex flex-row items-center justify-between mx-auto">
+  <div class="px-5 md:px-0 container flex flex-row items-center justify-between mx-auto">
     <div class="flex flex-row items-center gap-16">
       <a href="/" class="w-fit h-fit">
         <img

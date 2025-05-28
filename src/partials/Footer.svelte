@@ -97,7 +97,7 @@
   ]
 </script>
 
-<footer class="bg-uniqhbaunderground flex flex-col text-slate-100 w-full relative">
+<footer class="bg-uniqhbaunderground flex flex-col text-slate-100 w-full relative mt-5">
   <div class="w-[450px] h-auto absolute z-0 md:top-10 md:right-3 top-3/7 -right-7 translate-x-1/6">
     <img
       src="/icons/main-logo-darker.png"

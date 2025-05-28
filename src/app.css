@@ -4,3 +4,7 @@
   --color-uniqhbaunderground: #075F46;
   --color-uniqhbaunderground-2: #178E3B;
 }
+
+*::selection {
+  @apply bg-uniqhbaunderground text-white; 
+}
