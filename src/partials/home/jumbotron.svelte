@@ -15,8 +15,8 @@
           class="w-full h-auto"
         />
       </div>
-      <div class="w-full md:w-[600px] text-center">
-        <h1 class="text-lg">{SiteDesc}</h1>
+      <div class="w-full md:w-[600px] text-center px-5 md:px-0">
+        <h1 class="text-base md:text-lg">{SiteDesc}</h1>
       </div>
     </div>
     <img

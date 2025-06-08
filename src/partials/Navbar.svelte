@@ -10,6 +10,8 @@
   } from '@/state/page';
   import { browser } from '$app/environment';
   import { writable } from 'svelte/store';
+	import { Icon } from 'svelte-icons-pack';
+	import { BsList } from 'svelte-icons-pack/bs';
 
   const isShowMenu = writable(false)
 
@@ -45,13 +47,26 @@
 <div id="top" class="w-full h-fit flex flex-row items-center justify-center py-6">
   <div class="px-5 md:px-0 container flex flex-row items-center justify-between mx-auto">
     <div class="flex flex-row items-center gap-16">
-      <a href="/" class="w-fit h-fit">
-        <img
-          src="/icons/icon-text.svg"
-          alt="UNIQHBA Underground"
-          class="w-40 h-auto"
-        />
-      </a>
+      <div class="flex flex-row gap-3 items-center">
+        <div class="flex md:hidden">
+          <button
+            type="button"
+            onclick={() => $isShowMenu = !$isShowMenu}
+            class="">
+            <Icon
+              src={BsList}
+              size="30"
+            />
+          </button>
+        </div>
+        <a href="/" class="w-fit h-fit">
+          <img
+            src="/icons/icon-text.svg"
+            alt="UNIQHBA Underground"
+            class="w-40 h-auto"
+          />
+        </a>
+      </div>
       <nav class="hidden md:flex flex-row gap-5 items-center justify-center w-fit font-semibold text-sm">
         <a
           onclick={() => $PathName = PathHome}
@@ -98,20 +113,13 @@
     >
       Kontak Kami
     </a>
-    <div class="flex md:hidden">
-      <button aria-label="toggle menu" type="button" onclick={() => $isShowMenu = !$isShowMenu} class="toggle {$isShowMenu ? 'clicked' : ''}">
-        <div class="bars" id="bar1"></div>
-        <div class="bars" id="bar2"></div>
-        <div class="bars" id="bar3"></div>
-      </button>
-    </div>
   </div>
   <aside
-    class="{$isShowMenu ? 'left-0' : '-left-[250px]'} duration-150 py-6 px-6 h-screen w-[250px] bg-white rounded-r-xl
+    class="{$isShowMenu ? 'left-0' : '-left-[250px]'} duration-150 py-6 px-6 h-[100dvh] w-[250px] bg-white rounded-r-xl
     fixed z-50 top-0 bottom-0 flex flex-col gap-5">
     {#each navMenuMobile as nav}
       <a
-        class="hover:text-uniqhbaunderground {$PathName === nav.link ? 'text-uniqhbaunderground-2 bg-emerald-400/20' : ''} px-4 py-1 rounded-full w-fit"
+        class="hover:text-uniqhbaunderground {$PathName === nav.link ? 'text-uniqhbaunderground-2 bg-emerald-400/20 font-semibold' : ''} px-4 py-1 rounded-full w-fit"
         href={nav.link}
         onclick={()=> {
           $isShowMenu = false;
@@ -123,69 +131,3 @@
     {/each}
   </aside>
 </div>
-
-<style lang="postcss">
-  .toggle {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    transition-duration: .5s;
-  }
-
-  .bars {
-    width: 100%;
-    height: 3px;
-    background-color: #111;
-    border-radius: 4px;
-  }
-
-  #bar2 {
-    transition-duration: .8s;
-  }
-
-  #bar1, #bar3 {
-    width: 70%;
-  }
-
-  .toggle.clicked .bars {
-    position: absolute;
-    transition-duration: .5s;
-  }
-
-  .toggle.clicked #bar2 {
-    transform: scaleX(0);
-    transition-duration: .5s;
-  }
-
-  .toggle.clicked #bar1 {
-    width: 100%;
-    transform: rotate(45deg);
-    transition-duration: .5s;
-  }
-
-  .toggle.clicked #bar3 {
-    width: 100%;
-    transform: rotate(-45deg);
-    transition-duration: .5s;
-  }
-
-  .toggle.clicked {
-    transition-duration: .5s;
-    transform: rotate(180deg);
-  }
-
-  @keyframes showRay1832 {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-</style>

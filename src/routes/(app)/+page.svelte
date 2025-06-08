@@ -4,12 +4,12 @@
 	import Gallery from "@/partials/home/gallery.svelte";
 	import Jumbotron from "@/partials/home/jumbotron.svelte";
 	import Partners from "@/partials/home/partners.svelte";
-	import Services from "@/partials/home/services.svelte";
+	import Services from "@/partials/services.svelte";
 </script>
 
 <Head />
 
-<div class="container min-h-[900px] mx-auto flex flex-col gap-10">
+<div class="container min-h-[900px] mx-auto flex flex-col gap-7 md:gap-10">
   <Jumbotron />
   <AboutUs />
   <Gallery />

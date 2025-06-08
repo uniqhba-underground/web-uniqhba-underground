@@ -2,9 +2,8 @@
 
 </script>
 
-<div class="flex flex-col gap-4 py-6 px-5 md:px-0">
+<div class="flex flex-col gap-4 px-5 md:px-0">
   <h1 class="text-3xl font-bold">Tentang Kami</h1>
   <p class="text-neutral-600">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolore provident quam, alias repellat, atque nulla quos nisi nobis, saepe temporibus ratione nihil fugit facere officiis quibusdam culpa beatae eligendi?
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, necessitatibus ex! Sit delectus hic, at dolore veritatis accusamus, porro eum et quod quia, iure aliquam debitis nisi illum. Molestiae, officiis?</p>
+    Komunitas IT Mahasiswa UNIQHBA (Universitas Qamarul Huda Badaruddin Bagu). Komunitas ini di bentuk untuk mahasiswa yang tertarik dan ingin memperdalam pengetahuan, skill, jejaring sosial di bidang Teknologi Informasi, entah di bidang Programming, Desain Grafis, Cyber Security, dan salainnya. Kita belajar, berbagi informasi, berdiskusi, serta membantu satu sama lain dalam memahami ilmu - ilmu di bidang IT.</p>
 </div>

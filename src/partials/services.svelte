@@ -62,7 +62,7 @@
   ]
 </script>
 
-<section class="flex flex-col gap-5 justify-center items-center my-7">
+<section class="flex flex-col gap-5 justify-center items-center">
   <div class="w-full flex flex-col gap-2 px-5 md:px-0">
     <h1 class="text-3xl font-bold">Layanan Kami</h1>
     <p class="text-neutral-600">Kami menyediakan solusi teknologi yang disesuaikan dengan kebutuhan bisnis Anda. Dengan tim yang berpengalaman dan berorientasi pada hasil, kami siap membantu Anda membangun produk digital yang andal, efisien, dan siap bersaing.</p>
