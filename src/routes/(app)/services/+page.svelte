@@ -5,7 +5,8 @@
 </script>
 
 <Head
-  title="{SiteName} | Layanan"
+  title="{SiteName} | Layanan Kami"
+  description="Kami menyediakan solusi teknologi yang disesuaikan dengan kebutuhan bisnis Anda. Dengan tim yang berpengalaman dan berorientasi pada hasil, kami siap membantu Anda membangun produk digital yang andal, efisien, dan siap bersaing."
 />
 
 <div class="container min-h-[900px] mx-auto mt-5 md:mt-8">
