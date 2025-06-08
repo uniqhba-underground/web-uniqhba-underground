@@ -15,7 +15,7 @@
     />
   </div>
   <div class="flex flex-col gap-1">
-    <div class="flex flex-row gap-1.5 items-center">
+    <div class="flex flex-row flex-wrap gap-1.5 items-center">
       <span class="font-bold text-lg">{title}</span>
       {#if is_coming_soon}
         <span class="text-xs border

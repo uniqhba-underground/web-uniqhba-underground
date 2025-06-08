@@ -53,7 +53,7 @@
       is_coming_soon: true
     },
     {
-      title: 'Pengembangan Android',
+      title: 'Aplikasi Android',
       description: 'Kami merancang dan mengembangkan aplikasi Android yang stabil dan ramah pengguna. Mulai dari aplikasi internal perusahaan hingga produk digital untuk publik, semua dibangun dengan kualitas dan performa yang terjaga.',
       image_url: '/img/services/android-development.svg',
       class_img: 'w-16 h-16 bg-emerald-600 rounded-full p-4',
