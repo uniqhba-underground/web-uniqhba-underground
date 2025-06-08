@@ -44,7 +44,7 @@
       coming_soon: false
     },
     {
-      name: 'Mobile App',
+      name: 'Android Development',
       link: '#',
       coming_soon: true
     }
@@ -117,7 +117,7 @@
       <div class="flex flex-col gap-6 md:col-span-2">
         <p class="text-base">{SiteDesc}</p>
         <div class="flex flex-row gap-3 items-center">
-          <a target="_blank" href="https://www.instagram.com/uniqhbaunderground" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
+          <a target="_blank" href="https://www.instagram.com/uniqhba_underground" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
             <Icon
               src={RiLogosInstagramLine}
               size="16"
