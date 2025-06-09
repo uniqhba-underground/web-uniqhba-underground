@@ -9,11 +9,11 @@
     PathServices,
   } from '@/state/page';
   import { browser } from '$app/environment';
-  import { writable } from 'svelte/store';
+  import { writable, type Writable } from 'svelte/store';
 	import { Icon } from 'svelte-icons-pack';
 	import { BsList } from 'svelte-icons-pack/bs';
 
-  const isShowMenu = writable(false)
+  const isShowMenu: Writable<Boolean> = writable(false);
 
   onMount(() => {
     if (browser) {
