@@ -32,6 +32,13 @@
       is_coming_soon: false
     },
     {
+      title: 'Cyber Security Konsultan',
+      description: 'Kami membantu perusahaan Anda melindungi dari serangan keamanan, baik secara fisik maupun digital. Dibuat dengan teknologi terkini dan desain modern yang menunjang kredibilitas bisnis Anda.',
+      image_url: '/img/services/cyber-sec-consultant.svg',
+      class_img: 'w-16 h-16 bg-sky-600 rounded-full p-4',
+      is_coming_soon: false
+    },
+    {
       title: 'Desain Grafis',
       description: 'Butuh desain yang mencuri perhatian? Mulai dari logo, poster, feed Instagram, hingga banner promosi—kami siap bantu visualisasikan ide Anda ke dalam desain yang profesional dan berkarakter.',
       image_url: '/img/services/design-graphics.svg',
