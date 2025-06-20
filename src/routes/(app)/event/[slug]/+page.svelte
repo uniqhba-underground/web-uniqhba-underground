@@ -8,16 +8,13 @@
 	import { formatDateID } from "@/lib/formatter";
 	import { PathEvents, PathHome, PathName } from "@/state/page";
 	import { TrOutlineChevronRight } from "svelte-icons-pack/tr";
+	import Head from "@/partials/Head.svelte";
 
   export let data: PageData | any;
 
   const isExist: boolean = data.isExist || false;
   const ourEvent: OurEvent = data.ourEvent || {};
   const ourEventParticipants: ParticipantCertificate[] = data.ourEventParticipants || [];
-
-  onMount(() => {
-    console.log('OurEvent', ourEvent)
-  });
 
   function isDateInFuture(dateStr: string): boolean {
     const inputDate = new Date(dateStr);
@@ -27,6 +24,11 @@
     return inputDate > today;
   }
 </script>
+
+<Head
+  title="{OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.name}"
+  description={ourEvent.description}
+/>
 
 {#if isExist}
   <div class="container min-h-[900px] mx-auto">
@@ -64,6 +66,8 @@
             <div class="flex flex-row flex-wrap gap-2">
               <span class="text-sm border py-1 px-3 rounded-full w-fit {ourEvent.category}"
               >{OurEventCategoryMap[ourEvent.category]}</span>
+              <span class="text-sm border py-1 px-3 rounded-full w-fit other"
+              >{ourEvent.field}</span>
             </div>
             <div class="flex flex-col gap-2">
               <h1 class="group-hover:underline font-bold text-2xl md:text-4xl">{ourEvent.name}</h1>

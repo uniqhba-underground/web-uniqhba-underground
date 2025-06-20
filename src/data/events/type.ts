@@ -1,4 +1,5 @@
 import type { IconType } from "svelte-icons-pack";
+import type { EventField } from "./constant";
 
 export type OurEventCategory = (
   'mini_class' | 'workshop' | 'meetup' | 'webinar' | 'other'
@@ -28,6 +29,7 @@ export type OurEvent = {
   slug: EventSlug;
   image_url: string;
   category: OurEventCategory;
+  field: EventField;
 }
 
 export type ParticipantCertificate = {

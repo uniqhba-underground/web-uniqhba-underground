@@ -24,6 +24,10 @@
   $effect(() => {
     window.location.pathname;
     $PathName = window.location.pathname;
+
+    if (window.location.pathname.includes('event')) {
+      $PathName = PathEvents;
+    }
   });
 
   const navMenuMobile: {

@@ -2,6 +2,7 @@ import { RiMapMapPinLine } from "svelte-icons-pack/ri";
 import { TrOutlineBrandZoom } from "svelte-icons-pack/tr";
 import type { EventSlug, OurEvent, ParticipantCertificate } from "./type";
 import { ParticipantsTheSmartWayToStartInCyberSec } from "./participants/meetup/cybersec/01";
+import { FieldCyberSecurity, FieldOther, FieldUIUX, FieldWebProgramming } from "./constant";
 
 export const OurEvents: OurEvent[] = [
   {
@@ -16,6 +17,7 @@ export const OurEvents: OurEvent[] = [
     slug: 'cyber-sec-the-smart-way-to-start',
     image_url: '/img/events/cyber-sec-the-smart-way-to-start.jpg',
     category: 'meetup',
+    field: FieldCyberSecurity
   },
   {
     name: 'Membangun Portofolio UI dengan Dribbble',
@@ -29,6 +31,7 @@ export const OurEvents: OurEvent[] = [
     slug: 'ui-ux-with-lpe-bangun-portfolio',
     image_url: '/img/events/ui-ux-with-lpe-bangun-portfolio.jpg',
     category: 'workshop',
+    field: FieldUIUX
   },
   {
     name: 'Hacker kok baik?',
@@ -42,6 +45,7 @@ export const OurEvents: OurEvent[] = [
     slug: 'cyber-sec-hacker-kok-baik',
     image_url: '/img/events/cyber-sec-hacker-kok-baik.png',
     category: 'webinar',
+    field: FieldCyberSecurity
   },
   {
     name: 'Introduction to JavaScript',
@@ -55,6 +59,7 @@ export const OurEvents: OurEvent[] = [
     slug: 'web-programming-intro-js',
     image_url: '/img/events/web-programming-intro-js.png',
     category: 'mini_class',
+    field: FieldWebProgramming
   },
   {
     name: 'Loteng Dev Meet Up #3',
@@ -68,6 +73,7 @@ export const OurEvents: OurEvent[] = [
     slug: 'loteng-dev-meet-up-3',
     image_url: '/img/events/lotengdev-meetup-3-with-uniqhba.png',
     category: 'meetup',
+    field: FieldOther
   },
 ]
 

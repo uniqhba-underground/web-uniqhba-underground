@@ -19,6 +19,7 @@ export const load: PageServerLoad = async (event: ServerLoadEvent) => {
     slug: '',
     image_url: '',
     category: 'meetup',
+    field: 'Lainnya'
   }
   let ourEventParticipants: ParticipantCertificate[] = []
   for (const ev of OurEvents) {
