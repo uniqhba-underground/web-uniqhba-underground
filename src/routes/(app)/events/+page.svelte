@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { OurEventCategoryMap, OurEvents } from "@/data/events";
+	import { OurEvents } from "@/data/events/events";
+	import { OurEventCategoryMap } from "@/data/events/type";
 	import { SiteName } from "@/lib/constant";
 	import { formatDateID } from "@/lib/formatter";
   import Head from "@/partials/Head.svelte";

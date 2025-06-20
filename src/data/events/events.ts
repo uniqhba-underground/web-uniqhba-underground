@@ -1,39 +1,12 @@
-import type { IconType } from "svelte-icons-pack";
 import { RiMapMapPinLine } from "svelte-icons-pack/ri";
 import { TrOutlineBrandZoom } from "svelte-icons-pack/tr";
-
-type OurEventCategory = (
-  'mini_class' | 'workshop' | 'meetup' | 'webinar' | 'other'
-);
-
-export const OurEventCategoryMap: Record<OurEventCategory, string> = {
-  'meetup': 'Meet Up',
-  'mini_class': 'Mini Class',
-  'workshop': 'Workshop',
-  'webinar': 'Webinar',
-  'other': 'Lainnya'
-}
-
-type OurEventLocation = {
-  name: string;
-  icon: IconType;
-}
-
-type OurEvent = {
-  name: string;
-  description: string;
-  date: string;
-  time: string;
-  location: OurEventLocation;
-  slug: string;
-  image_url: string;
-  category: OurEventCategory;
-}
+import type { EventSlug, OurEvent, ParticipantCertificate } from "./type";
+import { ParticipantsTheSmartWayToStartInCyberSec } from "./participants/meetup/cybersec/01";
 
 export const OurEvents: OurEvent[] = [
   {
     name: 'The Smart Way to Start in Cyber Security',
-    description: 'Bagaimana langkah pertama untuk memulai karir di bidang Cyber Security?',
+    description: 'Bingung harus mulai dari mana buat terjun ke dunia Cyber Security? Yuk, temukan jawabannya di meetup ini!. Kita akan di bekali cara cerdas belajar Cyber Security mulai dari 0 dan bagaimana menghadapi tantangan selama belajar, oleh kak Gilang',
     date: '2025-06-14',
     time: '08:00 WITA - selesai',
     location: {
@@ -42,7 +15,7 @@ export const OurEvents: OurEvent[] = [
     },
     slug: 'cyber-sec-the-smart-way-to-start',
     image_url: '/img/events/cyber-sec-the-smart-way-to-start.jpg',
-    category: 'meetup'
+    category: 'meetup',
   },
   {
     name: 'Membangun Portofolio UI dengan Dribbble',
@@ -55,7 +28,7 @@ export const OurEvents: OurEvent[] = [
     },
     slug: 'ui-ux-with-lpe-bangun-portfolio',
     image_url: '/img/events/ui-ux-with-lpe-bangun-portfolio.jpg',
-    category: 'workshop'
+    category: 'workshop',
   },
   {
     name: 'Hacker kok baik?',
@@ -68,7 +41,7 @@ export const OurEvents: OurEvent[] = [
     },
     slug: 'cyber-sec-hacker-kok-baik',
     image_url: '/img/events/cyber-sec-hacker-kok-baik.png',
-    category: 'webinar'
+    category: 'webinar',
   },
   {
     name: 'Introduction to JavaScript',
@@ -81,7 +54,7 @@ export const OurEvents: OurEvent[] = [
     },
     slug: 'web-programming-intro-js',
     image_url: '/img/events/web-programming-intro-js.png',
-    category: 'mini_class'
+    category: 'mini_class',
   },
   {
     name: 'Loteng Dev Meet Up #3',
@@ -94,6 +67,10 @@ export const OurEvents: OurEvent[] = [
     },
     slug: 'loteng-dev-meet-up-3',
     image_url: '/img/events/lotengdev-meetup-3-with-uniqhba.png',
-    category: 'meetup'
+    category: 'meetup',
   },
 ]
+
+export const EventsParticipants: Record<EventSlug, ParticipantCertificate[]> = {
+  'cyber-sec-the-smart-way-to-start': ParticipantsTheSmartWayToStartInCyberSec
+}
