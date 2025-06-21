@@ -106,6 +106,7 @@
             </button>
           {:else}
             <CertificateGenerator
+              ourEvent={ourEvent}
               participants={ourEventParticipants}
             />
           {/if}

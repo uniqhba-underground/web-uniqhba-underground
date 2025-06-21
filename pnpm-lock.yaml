@@ -14,6 +14,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.1.10
         version: 4.1.10(vite@6.3.5(jiti@2.4.2)(lightningcss@1.30.1))
+      html-to-image:
+        specifier: ^1.11.13
+        version: 1.11.13
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -46,8 +49,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(svelte@5.34.7)(vite@6.3.5(jiti@2.4.2)(lightningcss@1.30.1))
       bits-ui:
-        specifier: ^2.8.4
-        version: 2.8.4(@internationalized/date@3.8.2)(svelte@5.34.7)
+        specifier: ^2.8.5
+        version: 2.8.5(@internationalized/date@3.8.2)(svelte@5.34.7)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -708,8 +711,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  bits-ui@2.8.4:
-    resolution: {integrity: sha512-q3UQH1ByPYM9VYU+doINQcpUGhWxwSLO5oMAOHjD5IvuJESOPzfr1R17zMGHFNGwJIVh9PpJM2oFlORQFFTt+g==}
+  bits-ui@2.8.5:
+    resolution: {integrity: sha512-GVVDcmc+mziNNWdzlBviN3HjFAIdEFddQFvTA5cjronMan8PnIhpNhc2+DKL5CYdTbrz6kuyt2YvuvnoWYmovw==}
     engines: {node: '>=20'}
     peerDependencies:
       '@internationalized/date': ^3.8.1
@@ -941,6 +944,9 @@ packages:
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+
+  html-to-image@1.11.13:
+    resolution: {integrity: sha512-cuOPoI7WApyhBElTTb9oqsawRvZ0rHhaHwghRLlTuffoD1B2aDemlCruLeZrUIIdvG7gs9xeELEPm6PhuASqrg==}
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -1985,7 +1991,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  bits-ui@2.8.4(@internationalized/date@3.8.2)(svelte@5.34.7):
+  bits-ui@2.8.5(@internationalized/date@3.8.2)(svelte@5.34.7):
     dependencies:
       '@floating-ui/core': 1.7.1
       '@floating-ui/dom': 1.7.1
@@ -2248,6 +2254,8 @@ snapshots:
   graphemer@1.4.0: {}
 
   has-flag@4.0.0: {}
+
+  html-to-image@1.11.13: {}
 
   ignore@5.3.2: {}
 

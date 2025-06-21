@@ -11,3 +11,13 @@ export const FieldGameDevelopment: EventField = 'Game Development';
 export const FieldDevOps: EventField = 'DevOps';
 export const FieldNetworking: EventField = 'Networking';
 export const FieldOther: EventField = 'Lainnya';
+
+export const CeritificateCompletion: string = 'Certificate Completion';
+export const CertificateParticipation: string = 'Certificate Participation';
+export const CertificateAchievement: string = 'Certificate Achievement';
+
+export type LabelAchievement = string;
+
+export const LabelParticipation: LabelAchievement = 'Atas partisipasi pada acara';
+export const LabelCompletion: LabelAchievement = 'Atas kelulusan pada kelas';
+export const LabelAchievements: LabelAchievement = 'Atas keberhasilan pada';
