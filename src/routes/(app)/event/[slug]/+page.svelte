@@ -4,11 +4,12 @@
 	import { onMount } from "svelte";
 	import CertificateGenerator from "@/partials/events/certificateGenerator.svelte";
 	import { Icon } from "svelte-icons-pack";
-	import { RiBusinessCalendarLine, RiSystemTimeLine } from "svelte-icons-pack/ri";
+	import { RiBusinessCalendarLine, RiSystemTimeLine, RiUserFacesGroup2Line } from "svelte-icons-pack/ri";
 	import { formatDateID } from "@/lib/formatter";
 	import { PathEvents, PathHome, PathName } from "@/state/page";
 	import { TrOutlineChevronRight } from "svelte-icons-pack/tr";
 	import Head from "@/partials/Head.svelte";
+	import { LuTicket } from "svelte-icons-pack/lu";
 
   export let data: PageData | any;
 
@@ -97,6 +98,22 @@
                   className="shrink-0"
                 />
                 <span class="grow">{ourEvent.location.name}</span>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <Icon
+                  src={LuTicket}
+                  size="25"
+                  className="shrink-0"
+                />
+                <span class="grow">{ourEvent.fee ? ourEvent.fee : 'Gratis'}</span>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <Icon
+                  src={RiUserFacesGroup2Line}
+                  size="25"
+                  className="shrink-0"
+                />
+                <span class="grow">{ourEvent.isPublic ? 'Terbuka untuk umum' : 'Khusus Mahasiswa UNIQHBA'}</span>
               </div>
             </div>
           </div>

@@ -22,15 +22,11 @@
       icon: RiBusinessMailLine
     },
     {
-      contact: '+62 878-6396-8484',
-      icon: RiLogosWhatsappLine
-    },
-    {
       contact: 'uniqhba_underground',
       icon: RiLogosInstagramLine
     },
     {
-      contact: 'Turmuzi, Jl. H. Badruddin, Bagu, Praya, Central Lombok Regency, West Nusa Tenggara 83371',
+      contact: 'Jl. H. Badruddin, Bagu, Pringgarata, Lombok Tengah, Nusa Tenggara Barat 83562',
       icon: RiMapMapPinLine
     }
   ]

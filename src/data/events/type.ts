@@ -30,6 +30,8 @@ export type OurEvent = {
   image_url: string;
   category: OurEventCategory;
   field: EventField;
+  fee?: string;
+  isPublic?: boolean;
 }
 
 export type ParticipantCertificate = {

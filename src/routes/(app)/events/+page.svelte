@@ -29,7 +29,7 @@
     <p>{pageDesc}</p>
     <div class="flex flex-col md:flex-row flex-wrap gap-5 justify-start w-full items-stretch px-0">
       {#each OurEvents as event}
-        <a href="/event/{event.slug}" class="relative w-full md:w-[334px] h-auto cursor-pointer group border border-neutral-200 p-4 flex flex-col justify-between gap-3 rounded-xl">
+        <a href="/event/{event.slug}#top" class="relative w-full md:w-[334px] h-auto cursor-pointer group border border-neutral-200 p-4 flex flex-col justify-between gap-3 rounded-xl">
           <div class="border border-neutral-100 overflow-hidden object-cover h-auto md:h-[300px] rounded-lg group">
             <img
               src={event.image_url}

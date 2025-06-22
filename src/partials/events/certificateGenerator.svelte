@@ -22,13 +22,16 @@
   async function generateCertificate() {}
 </script>
 
-<div class="bg-neutral-100 border border-neutral-200 rounded-lg p-4 flex flex-col gap-5 h-fit">
-  <div class="flex flex-col gap-3 md:grid md:grid-cols-2">
+<div class="bg-neutral-100 border border-neutral-200 rounded-lg p-4 flex flex-col gap-5 h-fit md:w-7/12 w-full">
+  <div class="flex flex-col gap-3 w-full">
     <div class="flex flex-col gap-2">
       <h3 class="text-2xl font-bold">Buat Sertifikat</h3>
       <Alert.Root variant="default" class="h-fit bg-yellow-400/20 text-yellow-600 border-yellow-500">
         <AlertCircleIcon />
-        <Alert.Title>Pastikan anda telah mengikuti acara sampai selesai</Alert.Title>
+        <Alert.Title class="font-bold">Pastikan anda telah mengikuti acara sampai selesai</Alert.Title>
+        <Alert.Description class="text-yellow-600">
+          Jika anda hadir dan tidak ada di daftar peserta, silahkan hubungi kami via email: uniqhbaunderground@gmail.com
+        </Alert.Description>
       </Alert.Root>
     </div>
     <div class="flex flex-col gap-3">
@@ -53,7 +56,7 @@
         </Select.Root>
       </div>
       <div class="flex w-full">
-        <button disabled={isGenerating} class="w-full py-2 px-auto bg-uniqhbaunderground hover:bg-uniqhbaunderground/90 text-white font-semibold rounded-md cursor-pointer">
+        <button onclick={generateCertificate} disabled={isGenerating} class="w-full py-2 px-auto bg-uniqhbaunderground hover:bg-uniqhbaunderground/90 text-white font-semibold rounded-md cursor-pointer">
           {#if isGenerating}
             <LoaderCircle class="h-4 w-4 animate-spin" />
             Generating...
