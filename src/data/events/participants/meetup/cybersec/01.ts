@@ -14,6 +14,10 @@ export const ParticipantsTheSmartWayToStartInCyberSec: ParticipantCertificate[] 
     "certificateId": "2025X0614M0103"
   },
   {
+    "name": "Ahmad Rizky Nusantara Habibi",
+    "certificateId": "2025X0614M0111"
+  },
+  {
     "name": "Anggun Sindiana",
     "certificateId": "2025X0614M0104"
   },
@@ -176,5 +180,17 @@ export const ParticipantsTheSmartWayToStartInCyberSec: ParticipantCertificate[] 
   {
     "name": "Multazam",
     "certificateId": "2025X0614M0145"
-  }
+  },
+  {
+    "name": "Sabardi",
+    "certificateId": "2025X0614M0146"
+  },
+  {
+    "name": "Lalu Wilanggeng Geni",
+    "certificateId": "2025X0614M0147"
+  },
+  {
+    "name": "Pipin Santika",
+    "certificateId": "2025X0614M0148"
+  },
 ]

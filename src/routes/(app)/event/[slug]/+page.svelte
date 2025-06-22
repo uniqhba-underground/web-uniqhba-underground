@@ -32,7 +32,7 @@
 />
 
 {#if isExist}
-  <div class="container min-h-[900px] mx-auto">
+  <div class="container h-fit mx-auto">
     <div class="w-full flex flex-col gap-5 mt-2 md:mt-8 px-5 md:px-0">
       <div class="flex flex-row flex-wrap md:text-base text-sm gap-1 items-center not-prose text-uniqhbaunderground font-semibold">
         <a

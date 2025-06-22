@@ -133,7 +133,7 @@
 	}
 </script>
 
-<div class="bg-neutral-100 border border-neutral-200 rounded-lg p-4 flex flex-col gap-5 h-fit w-full md:w-8/12">
+<div class="bg-neutral-100 border border-neutral-200 rounded-lg p-4 flex flex-col gap-5 h-fit w-full md:w-8/12 relative">
 	<div class="flex flex-col gap-3">
 		<div class="flex flex-col gap-2">
 			<h3 class="text-2xl font-bold">Buat Sertifikat</h3>
@@ -185,7 +185,7 @@
 	</div>
 </div>
 
-<div class="w-0 h-0 overflow-hidden">
+<div class="w-0 h-0 overflow-hidden relative">
 	<div bind:this={certificateEl} id="certificate" class="certificate">
 		<img
 			src="/img/certificate/template.png"
