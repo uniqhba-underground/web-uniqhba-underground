@@ -59,6 +59,7 @@
 	let isGenerating: boolean = $state(false);
 
 	let namaLengkap: string = $state('');
+  let subAchievement: string = $state('');
 	let achievement: string = $state('');
 
 	let labelAchievement: LabelAchievement = $state(LabelParticipation);
@@ -69,9 +70,21 @@
 
 	let certificateEl: HTMLDivElement;
 
+  function capitalizeWords(str: string): string {
+    return str
+      .toLowerCase()
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
+
 	async function generateCertificate() {
+    isGenerating = true;
 		tanggal = formatTanggalIndo(ourEvent.date);
 		field = ourEvent.field;
+
+    namaLengkap = capitalizeWords(participant);
+    achievement = ourEvent.name;
     
     for (const pr of participants) {
       if (pr.name === participant) {
@@ -83,15 +96,23 @@
       case 'meetup':
         certificateType = CertificateParticipation;
         labelAchievement = LabelParticipation;
+        subAchievement = 'Meet Up';
+        break;
       case 'mini_class':
         certificateType = CeritificateCompletion;
         labelAchievement = LabelCompletion;
+        subAchievement = 'Mini Class';
+        break;
       case 'workshop':
         certificateType = CeritificateCompletion;
         labelAchievement = LabelCompletion;
+        subAchievement = 'Workshop';
+        break;
       case 'webinar':
         certificateType = CertificateParticipation;
         labelAchievement = LabelParticipation;
+        subAchievement = 'Webinar';
+        break;
       default:
         certificateType = CertificateAchievement;
         labelAchievement = LabelAchievements;
@@ -103,7 +124,7 @@
 			})
 			.then(function (dataUrl) {
 				const link = document.createElement('a');
-				link.download = 'certificate.png';
+				link.download = 'certificate-'+certificateId+'.png';
 				link.href = dataUrl;
 				link.click();
 
@@ -112,8 +133,8 @@
 	}
 </script>
 
-<div class="bg-neutral-100 border border-neutral-200 rounded-lg p-4 flex flex-col gap-5 h-fit">
-	<div class="flex flex-col gap-3 md:grid md:grid-cols-2">
+<div class="bg-neutral-100 border border-neutral-200 rounded-lg p-4 flex flex-col gap-5 h-fit w-full md:w-8/12">
+	<div class="flex flex-col gap-3">
 		<div class="flex flex-col gap-2">
 			<h3 class="text-2xl font-bold">Buat Sertifikat</h3>
 			<Alert.Root
@@ -121,7 +142,10 @@
 				class="h-fit bg-yellow-400/20 text-yellow-600 border-yellow-500"
 			>
 				<AlertCircleIcon />
-				<Alert.Title>Pastikan anda telah mengikuti acara sampai selesai</Alert.Title>
+				<Alert.Title class="font-bold">Pastikan anda telah mengikuti acara sampai selesai</Alert.Title>
+        <Alert.Description>
+          <p class="text-sm text-yellow-600">Jika anda hadir dan nama anda tidak ada dalam daftar peserta, silahkan hubungi kami via email: uniqhbaunderground@gmail.com</p>
+        </Alert.Description>
 			</Alert.Root>
 		</div>
 		<div class="flex flex-col gap-3">
@@ -146,7 +170,7 @@
 				<button
 					disabled={isGenerating}
 					onclick={generateCertificate}
-					class="w-full py-2 px-auto bg-uniqhbaunderground hover:bg-uniqhbaunderground/90 text-white font-semibold rounded-md cursor-pointer"
+					class="flex flex-row items-center justify-center gap-2 w-full py-2 px-auto bg-uniqhbaunderground disabled:bg-neutral-200 hover:bg-uniqhbaunderground/90 text-white disabled:text-neutral-700 font-semibold rounded-md cursor-pointer disabled:cursor-not-allowed"
 				>
 					{#if isGenerating}
 						<LoaderCircle class="h-4 w-4 animate-spin" />
@@ -164,7 +188,7 @@
 <div class="w-0 h-0 overflow-hidden">
 	<div bind:this={certificateEl} id="certificate" class="certificate">
 		<img
-			src="img/certificate/template.png"
+			src="/img/certificate/template.png"
 			alt="template"
 			class="w-full h-full"
 			crossorigin="anonymous"
@@ -179,7 +203,7 @@
 		<span class="label-achievement">{labelAchievement}</span>
 		<!-- Pencapaian -->
 		<div class="achievement">
-			<p>{achievement}</p>
+			<p>{subAchievement ? subAchievement+': ' : ''} {achievement}</p>
 		</div>
 
 		<!-- Tanggal Sertifikat -->
@@ -262,7 +286,7 @@
 		font-size: 50px;
 		color: var(--color-uniqhbaunderground);
 		font-weight: 700;
-		text-transform: capitalize;
+		text-transform: capitalize !important;
 	}
 
 	/* PENCAPAIAN */

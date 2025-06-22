@@ -17,7 +17,16 @@ export const OurEvents: OurEvent[] = [
     slug: 'cyber-sec-the-smart-way-to-start',
     image_url: '/img/events/cyber-sec-the-smart-way-to-start.jpg',
     category: 'meetup',
-    field: FieldCyberSecurity
+    field: FieldCyberSecurity,
+    isPublic: true,
+    partners: [
+      'CSUC UNRAM',
+      'HMJ Ilmu Komputer UNIQHBA',
+      'HMJ Teknologi Informasi UNIQHBA',
+      'Badan Eksekutif Mahasiswa UNIQHBA',
+      'Petani Kode',
+      'Lombok Dev'
+    ]
   },
   {
     name: 'Membangun Portofolio UI dengan Dribbble',
@@ -31,7 +40,17 @@ export const OurEvents: OurEvent[] = [
     slug: 'ui-ux-with-lpe-bangun-portfolio',
     image_url: '/img/events/ui-ux-with-lpe-bangun-portfolio.jpg',
     category: 'workshop',
-    field: FieldUIUX
+    field: FieldUIUX,
+    isPublic: true,
+    partners: [
+      'LPE Space',
+      'Petani Kode',
+      'Lombok Dev',
+      'Vanguard Indonesia',
+      'Keffi Studio',
+      'Digitelnusa',
+      'UXID Lombok'
+    ]
   },
   {
     name: 'Hacker kok baik?',
@@ -45,7 +64,12 @@ export const OurEvents: OurEvent[] = [
     slug: 'cyber-sec-hacker-kok-baik',
     image_url: '/img/events/cyber-sec-hacker-kok-baik.png',
     category: 'webinar',
-    field: FieldCyberSecurity
+    field: FieldCyberSecurity,
+    isPublic: true,
+    partners: [
+      'CSUC UNRAM',
+      'Petani Kode',
+    ]
   },
   {
     name: 'Introduction to JavaScript',
@@ -59,7 +83,12 @@ export const OurEvents: OurEvent[] = [
     slug: 'web-programming-intro-js',
     image_url: '/img/events/web-programming-intro-js.png',
     category: 'mini_class',
-    field: FieldWebProgramming
+    field: FieldWebProgramming,
+    isPublic: false,
+    partners: [
+      'HMJ Ilmu Komputer UNIQHBA',
+      'HMJ Teknologi Informasi UNIQHBA'
+    ]
   },
   {
     name: 'Loteng Dev Meet Up #3',
@@ -73,7 +102,18 @@ export const OurEvents: OurEvent[] = [
     slug: 'loteng-dev-meet-up-3',
     image_url: '/img/events/lotengdev-meetup-3-with-uniqhba.png',
     category: 'meetup',
-    field: FieldOther
+    field: FieldOther,
+    isPublic: true,
+    partners: [
+      'Loteng Dev',
+      'Petani Kode',
+      'Lombok Dev',
+      'Ternak Linux',
+      'Able Code',
+      'Sasak Tech',
+      'BlocDev',
+      '@lukananakit'
+    ]
   },
 ]
 

@@ -86,11 +86,11 @@ export const ParticipantsTheSmartWayToStartInCyberSec: ParticipantCertificate[] 
     "certificateId": "2025X0614M0121"
   },
   {
-    "name": "Lalu irwan jayadi",
+    "name": "Lalu Irwan Jayadi",
     "certificateId": "2025X0614M0122"
   },
   {
-    "name": "MISBAHUL MUNZIR",
+    "name": "Misbahul Munzir",
     "certificateId": "2025X0614M0123"
   },
   {
@@ -146,7 +146,7 @@ export const ParticipantsTheSmartWayToStartInCyberSec: ParticipantCertificate[] 
     "certificateId": "2025X0614M0136"
   },
   {
-    "name": "Silvia meiftahul jannah",
+    "name": "Silvia Meiftahul Jannah",
     "certificateId": "2025X0614M0137"
   },
   {

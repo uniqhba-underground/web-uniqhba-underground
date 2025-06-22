@@ -24,5 +24,10 @@
       {/if}
     </div>
     <p class="text-sm line-clamp-3 text-neutral-600">{description}</p>
+    <div class="flex flex-row justify-end mt-3">
+      <a href="#top" class="w-fit text-center cursor-pointer text-sm font-semibold hover:underline text-uniqhbaunderground-2 hover:text-uniqhbaunderground">
+        Lihat Detail...
+      </a>
+    </div>
   </div>
 </div>
