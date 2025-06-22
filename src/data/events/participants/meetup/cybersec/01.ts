@@ -42,10 +42,6 @@ export const ParticipantsTheSmartWayToStartInCyberSec: ParticipantCertificate[] 
     "certificateId": "2025X0614M0110"
   },
   {
-    "name": "Ema Rahmawati",
-    "certificateId": "2025X0614M0111"
-  },
-  {
     "name": "Febriyanto",
     "certificateId": "2025X0614M0112"
   },
@@ -82,7 +78,7 @@ export const ParticipantsTheSmartWayToStartInCyberSec: ParticipantCertificate[] 
     "certificateId": "2025X0614M0120"
   },
   {
-    "name": "Lalu Heru ",
+    "name": "Lalu Heru",
     "certificateId": "2025X0614M0121"
   },
   {
