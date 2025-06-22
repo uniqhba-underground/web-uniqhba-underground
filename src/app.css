@@ -128,3 +128,10 @@
 *::selection {
   @apply bg-uniqhbaunderground text-white; 
 }
+
+#nprogress {
+  pointer-events: none;
+}
+#nprogress .bar {
+  @apply !bg-uniqhbaunderground !fixed !z-50 !top-0 !left-0 !w-full !h-[3px];
+}

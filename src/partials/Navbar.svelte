@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import {
     PathName,
     PathHome,
@@ -8,27 +7,11 @@
     PathEvents,
     PathServices,
   } from '@/state/page';
-  import { browser } from '$app/environment';
   import { writable, type Writable } from 'svelte/store';
 	import { Icon } from 'svelte-icons-pack';
 	import { BsList } from 'svelte-icons-pack/bs';
 
   const isShowMenu: Writable<Boolean> = writable(false);
-
-  onMount(() => {
-    if (browser) {
-      $PathName = window.location.pathname;
-    }
-  });
-
-  $effect(() => {
-    window.location.pathname;
-    $PathName = window.location.pathname;
-
-    if (window.location.pathname.includes('event')) {
-      $PathName = PathEvents;
-    }
-  });
 
   const navMenuMobile: {
     name: string;
@@ -73,7 +56,6 @@
       </div>
       <nav class="hidden md:flex flex-row gap-5 items-center justify-center w-fit font-semibold text-sm">
         <a
-          onclick={() => $PathName = PathHome}
           href={PathHome}
           class="w-fit h-fit hover:text-uniqhbaunderground cursor-pointer flex flex-col gap-1.5 justify-center items-center
           {$PathName === PathHome ? 'text-uniqhbaunderground' : ''}"
@@ -82,7 +64,6 @@
           <span class="w-[70px] h-[3px] {$PathName === PathHome ? 'bg-uniqhbaunderground' : 'bg-transparent'}"></span>
         </a>
         <a
-          onclick={() => $PathName = PathAbout}
           href={PathAbout}
           class="w-fit h-fit hover:text-uniqhbaunderground cursor-pointer flex flex-col gap-1.5 justify-center items-center
           {$PathName === PathAbout ? 'text-uniqhbaunderground' : ''}"
@@ -91,7 +72,6 @@
           <span class="w-[70px] h-[3px] {$PathName === PathAbout ? 'bg-uniqhbaunderground' : 'bg-transparent'}"></span>
         </a>
         <a
-          onclick={() => $PathName = PathServices}
           href={PathServices}
           class="w-fit h-fit hover:text-uniqhbaunderground cursor-pointer flex flex-col gap-1.5 justify-center items-center
           {$PathName === PathServices ? 'text-uniqhbaunderground' : ''}"
@@ -100,7 +80,6 @@
           <span class="w-[70px] h-[3px] {$PathName === PathServices ? 'bg-uniqhbaunderground' : 'bg-transparent'}"></span>
         </a>
         <a
-          onclick={() => $PathName = PathEvents}
           href={PathEvents}
           class="w-fit h-fit hover:text-uniqhbaunderground cursor-pointer flex flex-col gap-1.5 justify-center items-center
           {$PathName === PathEvents ? 'text-uniqhbaunderground' : ''}"
@@ -111,7 +90,6 @@
       </nav>
     </div>
     <a
-      onclick={() => $PathName = PathContact}
       href={PathContact}
       class="md:block hidden w-fit h-fit cursor-pointer py-2 px-5 rounded-full text-white bg-uniqhbaunderground hover:bg-uniqhbaunderground/90 text-sm"
     >
@@ -125,10 +103,7 @@
       <a
         class="hover:text-uniqhbaunderground {$PathName === nav.link ? 'text-uniqhbaunderground-2 bg-emerald-400/20 font-semibold' : ''} px-4 py-1 rounded-full w-fit"
         href={nav.link}
-        onclick={()=> {
-          $isShowMenu = false;
-          $PathName = nav.link;
-        }}
+        onclick={()=> $isShowMenu = false}
       >
         {nav.name}
       </a>

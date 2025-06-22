@@ -144,7 +144,7 @@
 				<AlertCircleIcon />
 				<Alert.Title class="font-bold">Pastikan anda telah mengikuti acara sampai selesai</Alert.Title>
         <Alert.Description>
-          <p class="text-sm text-yellow-600">Jika anda hadir dan nama anda tidak ada dalam daftar peserta, silahkan hubungi kami via email: uniqhbaunderground@gmail.com</p>
+          <p class="text-sm text-yellow-600">Jika ada kesalahan nama, atau jika anda hadir dan nama anda tidak ada dalam daftar peserta, silahkan hubungi kami via email: uniqhbaunderground@gmail.com</p>
         </Alert.Description>
 			</Alert.Root>
 		</div>
