@@ -117,7 +117,7 @@
               </div>
               {#if ourEvent.partners && ourEvent.partners.length > 0}
                 <div class="flex flex-col gap-1">
-                  <span class="font-bold">Partners</span>
+                  <span class="font-bold text-uniqhbaunderground-2">Partners:</span>
                   <ul class="text-sm ml-2 list-disc list-inside marker:text-uniqhbaunderground-2">
                     {#each ourEvent.partners as partner }
                       <li>{partner}</li>

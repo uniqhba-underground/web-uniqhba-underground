@@ -2,7 +2,7 @@
 	import { SiteDesc } from "@/lib/constant";
 	import { PathAbout, PathContact, PathEvents, PathHome, PathServices } from "@/state/page";
 	import { Icon } from "svelte-icons-pack";
-	import { RiBusinessMailLine, RiLogosFacebookFill, RiLogosInstagramLine, RiLogosYoutubeFill } from "svelte-icons-pack/ri";
+	import { RiBusinessMailLine, RiLogosFacebookFill, RiLogosInstagramLine, RiLogosYoutubeFill, RiLogosGithubLine} from "svelte-icons-pack/ri";
 
   const year: string = new Date().getFullYear().toString();
 
@@ -117,27 +117,33 @@
       <div class="flex flex-col gap-6 md:col-span-2">
         <p class="text-base">{SiteDesc}</p>
         <div class="flex flex-row gap-3 items-center">
-          <a target="_blank" href="https://www.instagram.com/uniqhba_underground" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
+          <a title="Instagram" target="_blank" href="https://www.instagram.com/uniqhba_underground" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
             <Icon
               src={RiLogosInstagramLine}
               size="16"
             />
           </a>
-          <a target="_blank" href="mailto:uniqhbaunderground@gmail.com" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
+          <a title="Facebook" target="_blank" href="mailto:uniqhbaunderground@gmail.com" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
             <Icon
               src={RiLogosFacebookFill}
               size="16"
             />
           </a>
-          <a target="_blank" href="mailto:uniqhbaunderground@gmail.com" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
+          <a title="YouTube" target="_blank" href="mailto:uniqhbaunderground@gmail.com" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
             <Icon
               src={RiLogosYoutubeFill}
               size="16"
             />
           </a>
-          <a target="_blank" href="mailto:uniqhbaunderground@gmail.com" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
+          <a title="Email" target="_blank" href="mailto:uniqhbaunderground@gmail.com" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
             <Icon
               src={RiBusinessMailLine}
+              size="16"
+            />
+          </a>
+          <a title="Github" target="_blank" href="https://github.com/uniqhba-underground" class="hover:bg-white/10 p-2 rounded-full border border-slate-200">
+            <Icon
+              src={RiLogosGithubLine}
               size="16"
             />
           </a>
