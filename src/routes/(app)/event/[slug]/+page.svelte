@@ -43,6 +43,8 @@
   title="{OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.name}"
   description={ourEvent.description}
   imageUrl="{SiteBaseUrl}{ourEvent.image_url}"
+  imgWidth="600"
+  imgHeight="600"
 />
 
 {#if isExist}

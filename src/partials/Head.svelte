@@ -6,6 +6,8 @@
   export let description: string = SiteDesc;
   export let imageUrl: string = SiteImageUrl;
   export let author: string = SiteAuthor;
+  export let imgWidth: string = "1200";
+  export let imgHeight: string = "630";
 
   const siteUrl: string = SiteBaseUrl + path;
 </script>
@@ -24,8 +26,8 @@
   <meta property="og:url" content={siteUrl} />
   <meta property="og:image" content={imageUrl} />
   <meta property="og:image:secure_url" content={imageUrl} />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image:width" content={imgWidth} />
+  <meta property="og:image:height" content={imgHeight} />
   <meta property="og:image:alt" content={title} />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
