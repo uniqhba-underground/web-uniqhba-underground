@@ -6,6 +6,27 @@ import { FieldCyberSecurity, FieldOther, FieldUIUX, FieldWebProgramming } from "
 
 export const OurEvents: OurEvent[] = [
   {
+    name: 'Efficient Asset Management for UI/UX Designers',
+    description: 'Pusing cari dan kelola aset desain yang berserakan? Tenang, kita bantu beresin! Yuk ikuti workshop "Efficient Asset Management for UI/UX Designers" dan pelajari cara ngatur aset desainmu biar kerjaan makin cepat dan rapi!',
+    date: '2025-07-26',
+    time: '08:00 WITA - selesai',
+    location: {
+      name: 'Lt. 5 Gedung Fak. Kesehatan, UNIQHBA',
+      icon: RiMapMapPinLine
+    },
+    slug: 'ui-ux-with-efficient-asset-management',
+    image_url: '/img/events/ui-ux-efficient-asset-management.png',
+    category: 'workshop',
+    field: FieldUIUX,
+    isPublic: true,
+    partners: [
+      'LPE Space',
+      'Petani Kode',
+      'Lombok Dev',
+    ],
+    registration_link: 'https://s.id/FYCeT'
+  },
+  {
     name: 'The Smart Way to Start in Cyber Security',
     description: 'Bingung harus mulai dari mana buat terjun ke dunia Cyber Security? Yuk, temukan jawabannya di meetup ini!. Kita akan di bekali cara cerdas belajar Cyber Security mulai dari 0 dan bagaimana menghadapi tantangan selama belajar, oleh kak Gilang',
     date: '2025-06-14',
@@ -26,7 +47,8 @@ export const OurEvents: OurEvent[] = [
       'Badan Eksekutif Mahasiswa UNIQHBA',
       'Petani Kode',
       'Lombok Dev'
-    ]
+    ],
+    registration_link: 'https://s.id/iX80S'
   },
   {
     name: 'Membangun Portofolio UI dengan Dribbble',
@@ -50,7 +72,8 @@ export const OurEvents: OurEvent[] = [
       'Keffi Studio',
       'Digitelnusa',
       'UXID Lombok'
-    ]
+    ],
+    registration_link: ''
   },
   {
     name: 'Hacker kok baik?',
@@ -69,7 +92,8 @@ export const OurEvents: OurEvent[] = [
     partners: [
       'CSUC UNRAM',
       'Petani Kode',
-    ]
+    ],
+    registration_link: ''
   },
   {
     name: 'Introduction to JavaScript',
@@ -88,7 +112,8 @@ export const OurEvents: OurEvent[] = [
     partners: [
       'HMJ Ilmu Komputer UNIQHBA',
       'HMJ Teknologi Informasi UNIQHBA'
-    ]
+    ],
+    registration_link: ''
   },
   {
     name: 'Loteng Dev Meet Up #3',
@@ -113,7 +138,8 @@ export const OurEvents: OurEvent[] = [
       'Sasak Tech',
       'BlocDev',
       '@lukananakit'
-    ]
+    ],
+    registration_link: ''
   },
 ]
 

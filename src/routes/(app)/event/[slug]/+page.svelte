@@ -29,6 +29,7 @@
 <Head
   title="{OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.name}"
   description={ourEvent.description}
+  imageUrl={ourEvent.image_url}
 />
 
 {#if isExist}
@@ -128,9 +129,14 @@
             </div>
           </div>
           {#if isDateInFuture(ourEvent.date)}
-            <button class="w-full py-2 px-auto bg-uniqhbaunderground hover:bg-uniqhbaunderground/90 text-white font-semibold rounded-md cursor-pointer">
+            <a
+              href="{ourEvent.registration_link}"
+              target="_blank"
+              class="flex flex-row justify-center items-center w-full md:w-fit py-2 px-auto md:px-4
+              bg-uniqhbaunderground hover:bg-uniqhbaunderground/90 text-white font-semibold rounded-md cursor-pointer"
+            >
               Daftar Sekarang
-            </button>
+            </a>
           {:else}
             <CertificateGenerator
               ourEvent={ourEvent}

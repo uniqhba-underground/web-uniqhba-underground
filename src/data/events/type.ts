@@ -33,6 +33,7 @@ export type OurEvent = {
   fee?: string;
   isPublic?: boolean;
   partners?: string[];
+  registration_link?: string;
 }
 
 export type ParticipantCertificate = {
