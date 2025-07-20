@@ -15,7 +15,6 @@
 	import Head from "@/partials/Head.svelte";
 	import { LuTicket } from "svelte-icons-pack/lu";
 	import { SiteBaseUrl } from "@/lib/constant";
-	import toast, { Toaster } from "svelte-french-toast";
 
   export let data: PageData | any;
 
@@ -33,11 +32,8 @@
 
   function copyLink() {
     navigator.clipboard.writeText(SiteBaseUrl + '/events/' + ourEvent.slug);
-    toast.success('Link berhasil disalin');
   }
 </script>
-
-<Toaster />
 
 <Head
   title="{OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.name}"
