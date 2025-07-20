@@ -88,7 +88,7 @@
               <a
                 title="Share to Facebook"
                 target="_blank"
-                href="https://www.facebook.com/sharer.php?u={SiteBaseUrl}/event/{OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
+                href="https://www.facebook.com/sharer.php?u={SiteBaseUrl}/event/{OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.name}"
                 class="bg-uniqhbaunderground hover:bg-uniqhbaunderground/80 text-white p-1.5 rounded-full cursor-pointer"
               >
                 <Icon
@@ -99,7 +99,7 @@
               <a
                 title="Share to X (Twitter)"
                 target="_blank"
-                href="https://twitter.com/share?url={SiteBaseUrl}/event/{ourEvent.slug}&text={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
+                href="https://twitter.com/share?url={SiteBaseUrl}/event/{ourEvent.slug}&text={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.name}"
                 class="bg-uniqhbaunderground hover:bg-uniqhbaunderground/80 text-white p-1.5 rounded-full cursor-pointer"
               >
                 <Icon
@@ -110,7 +110,7 @@
               <a
                 title="Share to LinkedIn"
                 target="_blank"
-                href="https://www.linkedin.com/shareArticle?url={SiteBaseUrl}/event/{ourEvent.slug}&title={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
+                href="https://www.linkedin.com/shareArticle?url={SiteBaseUrl}/event/{ourEvent.slug}&title={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.name}"
                 class="bg-uniqhbaunderground hover:bg-uniqhbaunderground/80 text-white p-1.5 rounded-full cursor-pointer"
               >
                 <Icon
@@ -121,7 +121,7 @@
               <a
                 title="Share to WhatsApp"
                 target="_blank"
-                href="https://wa.me/?text={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name} {SiteBaseUrl}/event/{ourEvent.slug}"
+                href="https://wa.me/?text={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.name} {SiteBaseUrl}/event/{ourEvent.slug}"
                 class="bg-uniqhbaunderground hover:bg-uniqhbaunderground/80 text-white p-1.5 rounded-full cursor-pointer"
               >
                 <Icon
@@ -132,7 +132,7 @@
               <a
                 title="Share to Telegram"
                 target="_blank"
-                href="https://t.me/share/url?url={SiteBaseUrl}/event/{ourEvent.slug}&title={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
+                href="https://t.me/share/url?url={SiteBaseUrl}/event/{ourEvent.slug}&title={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.name}"
                 class="bg-uniqhbaunderground hover:bg-uniqhbaunderground/80 text-white p-1.5 rounded-full cursor-pointer"
               >
                 <Icon
