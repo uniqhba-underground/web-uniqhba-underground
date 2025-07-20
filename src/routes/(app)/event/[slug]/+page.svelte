@@ -15,6 +15,7 @@
 	import Head from "@/partials/Head.svelte";
 	import { LuTicket } from "svelte-icons-pack/lu";
 	import { SiteBaseUrl } from "@/lib/constant";
+	import toast, { Toaster } from "svelte-french-toast";
 
   export let data: PageData | any;
 
@@ -31,9 +32,12 @@
   }
 
   function copyLink() {
-    navigator.clipboard.writeText(SiteBaseUrl + '/events/' + ourEvent.slug);
+    navigator.clipboard.writeText(SiteBaseUrl + '/event/' + ourEvent.slug);
+    toast.success('Link berhasil disalin');
   }
 </script>
+
+<Toaster />
 
 <Head
   title="{OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.name}"
@@ -84,7 +88,7 @@
               <a
                 title="Share to Facebook"
                 target="_blank"
-                href="https://www.facebook.com/sharer.php?u={SiteBaseUrl}/events/{OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
+                href="https://www.facebook.com/sharer.php?u={SiteBaseUrl}/event/{OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
                 class="bg-uniqhbaunderground hover:bg-uniqhbaunderground/80 text-white p-1.5 rounded-full cursor-pointer"
               >
                 <Icon
@@ -95,7 +99,7 @@
               <a
                 title="Share to X (Twitter)"
                 target="_blank"
-                href="https://twitter.com/share?url={SiteBaseUrl}/events/{ourEvent.slug}&text={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
+                href="https://twitter.com/share?url={SiteBaseUrl}/event/{ourEvent.slug}&text={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
                 class="bg-uniqhbaunderground hover:bg-uniqhbaunderground/80 text-white p-1.5 rounded-full cursor-pointer"
               >
                 <Icon
@@ -106,7 +110,7 @@
               <a
                 title="Share to LinkedIn"
                 target="_blank"
-                href="https://www.linkedin.com/shareArticle?url={SiteBaseUrl}/events/{ourEvent.slug}&title={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
+                href="https://www.linkedin.com/shareArticle?url={SiteBaseUrl}/event/{ourEvent.slug}&title={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
                 class="bg-uniqhbaunderground hover:bg-uniqhbaunderground/80 text-white p-1.5 rounded-full cursor-pointer"
               >
                 <Icon
@@ -117,7 +121,7 @@
               <a
                 title="Share to WhatsApp"
                 target="_blank"
-                href="https://wa.me/?text={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name} {SiteBaseUrl}/events/{ourEvent.slug}"
+                href="https://wa.me/?text={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name} {SiteBaseUrl}/event/{ourEvent.slug}"
                 class="bg-uniqhbaunderground hover:bg-uniqhbaunderground/80 text-white p-1.5 rounded-full cursor-pointer"
               >
                 <Icon
@@ -128,7 +132,7 @@
               <a
                 title="Share to Telegram"
                 target="_blank"
-                href="https://t.me/share/url?url={SiteBaseUrl}/events/{ourEvent.slug}&title={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
+                href="https://t.me/share/url?url={SiteBaseUrl}/event/{ourEvent.slug}&title={OurEventCategoryMap[ourEvent.category]} {ourEvent.field}: {ourEvent.field} {ourEvent.name}"
                 class="bg-uniqhbaunderground hover:bg-uniqhbaunderground/80 text-white p-1.5 rounded-full cursor-pointer"
               >
                 <Icon
