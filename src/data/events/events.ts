@@ -16,6 +16,7 @@ export const OurEvents: OurEvent[] = [
     },
     slug: 'ui-ux-with-efficient-asset-management',
     image_url: '/img/events/ui-ux-efficient-asset-management.png',
+    thumbnail_url: '/img/events/ui-ux-efficient-asset-management-thumbnail.png',
     category: 'workshop',
     field: FieldUIUX,
     isPublic: true,

@@ -28,6 +28,7 @@ export type OurEvent = {
   location: OurEventLocation;
   slug: EventSlug;
   image_url: string;
+  thumbnail_url?: string;
   category: OurEventCategory;
   field: EventField;
   fee?: string;

@@ -24,8 +24,8 @@
   <meta property="og:locale:alternate" content="en_UK" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={siteUrl} />
-  <meta property="og:image" content={imageUrl} />
-  <meta property="og:image:secure_url" content={imageUrl} />
+  <meta property="og:image" content={imageUrl ? imageUrl : SiteImageUrl} />
+  <meta property="og:image:secure_url" content={imageUrl ? imageUrl : SiteImageUrl} />
   <meta property="og:image:width" content={imgWidth} />
   <meta property="og:image:height" content={imgHeight} />
   <meta property="og:image:alt" content={title} />
