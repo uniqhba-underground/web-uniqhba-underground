@@ -329,6 +329,7 @@
 		left: 142px;
 		display: flex;
 		flex-direction: row;
+		align-items: end;
 		gap: 80px;
 	}
 	.certificate .ttd .item {
@@ -338,7 +339,7 @@
 	}
 
 	.certificate .ttd .item .img-container {
-		width: 214px;
+		width: 240px;
 		height: auto;
 	}
 
