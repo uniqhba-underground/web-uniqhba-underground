@@ -1,8 +1,9 @@
 import { RiMapMapPinLine } from "svelte-icons-pack/ri";
 import { TrOutlineBrandZoom } from "svelte-icons-pack/tr";
 import type { EventSlug, OurEvent, ParticipantCertificate } from "./type";
-import { ParticipantsTheSmartWayToStartInCyberSec } from "./participants/meetup/cybersec/01";
+import { ParticipantsMeetUp01CyberSec } from "./participants/meetup/01";
 import { FieldCyberSecurity, FieldOther, FieldUIUX, FieldWebProgramming } from "./constant";
+import { ParticipantsMeetUp01UIUX } from "./participants/workshop/01";
 
 export const OurEvents: OurEvent[] = [
   {
@@ -14,7 +15,7 @@ export const OurEvents: OurEvent[] = [
       name: 'Lt. 5 Gedung Fak. Kesehatan, UNIQHBA',
       icon: RiMapMapPinLine
     },
-    slug: 'ui-ux-with-efficient-asset-management',
+    slug: 'ui-ux-efficient-asset-management',
     image_url: '/img/events/ui-ux-efficient-asset-management.png',
     thumbnail_url: '/img/events/ui-ux-efficient-asset-management-thumbnail.png',
     category: 'workshop',
@@ -148,5 +149,6 @@ export const OurEvents: OurEvent[] = [
 ]
 
 export const EventsParticipants: Record<EventSlug, ParticipantCertificate[]> = {
-  'cyber-sec-the-smart-way-to-start': ParticipantsTheSmartWayToStartInCyberSec
+  'cyber-sec-the-smart-way-to-start': ParticipantsMeetUp01CyberSec,
+  'ui-ux-efficient-asset-management': ParticipantsMeetUp01UIUX
 }

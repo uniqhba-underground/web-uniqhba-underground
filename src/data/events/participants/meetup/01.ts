@@ -1,6 +1,6 @@
 import type { ParticipantCertificate } from "@/data/events/type";
 
-export const ParticipantsTheSmartWayToStartInCyberSec: ParticipantCertificate[] = [
+export const ParticipantsMeetUp01CyberSec: ParticipantCertificate[] = [
   {
     "name": "Abdul Hadi",
     "certificateId": "2025X0614M0101"
