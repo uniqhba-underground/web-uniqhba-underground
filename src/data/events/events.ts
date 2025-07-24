@@ -21,9 +21,12 @@ export const OurEvents: OurEvent[] = [
     field: FieldUIUX,
     isPublic: true,
     partners: [
-      'LPE Space',
-      'Petani Kode',
+      'HMJ Ilmu Komputer UNIQHBA',
+      'HMJ Teknologi Informasi UNIQHBA',
       'Lombok Dev',
+      'Petani Kode',
+      'LPE Space',
+      'CV. Bale Technology Solutions'
     ],
     registration_link: 'https://s.id/FYCeT'
   },

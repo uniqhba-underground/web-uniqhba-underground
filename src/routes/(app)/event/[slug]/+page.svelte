@@ -26,8 +26,6 @@
   function isDateInFuture(dateStr: string): boolean {
     const inputDate = new Date(dateStr);
     const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    inputDate.setHours(0, 0, 0, 0);
     return inputDate > today;
   }
 
@@ -68,7 +66,7 @@
       </div>
       <div class="flex flex-col md:grid grid-cols-7 gap-6">
         <div class="col-span-3 flex flex-col gap-3">
-          <div class="border border-neutral-100 overflow-hidden object-cover h-auto w-full rounded-lg group">
+          <div class="border border-neutral-100 overflow-hidden object-cover h-auto w-full rounded-lg group shadow">
             <img
               src={ourEvent.image_url}
               alt=""

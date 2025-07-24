@@ -9,6 +9,13 @@
 
 <div class="container min-h-[700px] mx-auto">
   <div class="w-full flex flex-col gap-5 mt-5 md:mt-8 px-5 md:px-0">
+    <div class="w-full h-auto aspect-auto rounded-2xl overflow-hidden">
+      <img
+        src="/img/gallery/jumbotron.png"
+        alt=""
+        class="w-full h-auto"
+      />
+    </div>
     <h1 class="text-3xl font-bold">Tentang Kami</h1>
     <p>Komunitas IT Mahasiswa UNIQHBA (Universitas Qamarul Huda Badaruddin Bagu). Komunitas ini di bentuk untuk mahasiswa yang tertarik dan ingin memperdalam pengetahuan, skill, jejaring sosial di bidang Teknologi Informasi, entah di bidang Programming, Desain Grafis, Cyber Security, dan salainnya. Kita belajar, berbagi informasi, berdiskusi, serta membantu satu sama lain dalam memahami ilmu - ilmu di bidang IT.</p>
     <div class="flex flex-col gap-3">
