@@ -238,7 +238,7 @@
 					<img src="/img/certificate/ttd-ketua-panitia.png" alt="" />
 				</div>
 				<div class="name-container">
-					<span class="nama">Sabardi Bahari</span>
+					<span class="nama">Sabardi</span>
 					<span class="jabatan">Ketua panitia penyelenggara</span>
 				</div>
 			</div>
