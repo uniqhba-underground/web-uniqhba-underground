@@ -4,7 +4,7 @@ UNIQHBA Underground adalah komunitas IT mahasiswa Universitas Qamarul Huda badar
 
 ## ✨ Visi
 
-Menjadi komunitas IT yang berkontribusi dalam pengembangan teknologi dan inovasi, serta mendorong anggotanya untuk menjadi talenta digital yang unggul, inovatif, dan berdedikasi untuk kemajuan masyarakat dan negara.
+Menjadi komunitas IT yang berkontribusi dalam pengembangan teknologi dan inovasi, serta mendorong anggotanya untuk menjadi talenta digital yang unggul, inovatif, dan berdedikasi untuk kemajuan masyarakat,universitas,dan negara.
 
 ## 💥 Misi
 
