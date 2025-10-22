@@ -92,6 +92,10 @@
     @apply border-sky-600 bg-sky-400/20 text-sky-600;
   }
 
+  .bootcamp {
+    @apply border-purple-600 bg-purple-400/20 text-purple-600;
+  }
+
   .other {
     @apply border-neutral-600 bg-neutral-400/20 text-neutral-600;
   }

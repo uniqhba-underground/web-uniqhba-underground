@@ -7,6 +7,29 @@ import { ParticipantsMeetUp01UIUX } from "./participants/workshop/01";
 
 export const OurEvents: OurEvent[] = [
   {
+    name: 'Cyber Academy 0.1: Offensive Red Team',
+    description: 'Pelatihan ini membekali mahasiswa dengan keterampilan praktis dalam penetration testing melalui pendekatan Red Team. Peserta akan belajar bagaimana seorang penyerang siber merencanakan, mengeksekusi, dan mengevaluasi serangan terhadap sistem informasi secara terstruktur',
+    date: '2025-10-27',
+    duration: '3 Bulan',
+    time: '08:00 WITA - selesai',
+    location: {
+      name: 'Lt. 5 Gedung Fak. Kesehatan, UNIQHBA',
+      icon: RiMapMapPinLine
+    },
+    slug: 'cyber-sec-offensive-red-team',
+    image_url: '/img/events/cyber-sec-offensive-red-team.png',
+    thumbnail_url: '/img/events/cyber-sec-offensive-red-team-thumbnail.png',
+    category: 'bootcamp',
+    field: FieldCyberSecurity,
+    isPublic: false,
+    partners: [
+      'HMJ Ilmu Komputer UNIQHBA',
+      'HMJ Teknologi Informasi UNIQHBA',
+      'CV. Bale Technology Solutions',
+    ],
+    registration_link: 'https://bit.ly/46dt525'
+  },
+  {
     name: 'Efficient Asset Management for UI/UX Designers',
     description: 'Pusing cari dan kelola aset desain yang berserakan? Tenang, kita bantu beresin! Yuk ikuti workshop "Efficient Asset Management for UI/UX Designers" dan pelajari cara ngatur aset desainmu biar kerjaan makin cepat dan rapi!',
     date: '2025-07-26',

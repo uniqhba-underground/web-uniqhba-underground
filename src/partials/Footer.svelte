@@ -108,7 +108,7 @@
   <div class="container mx-auto flex flex-col gap-5 px-5 md:px-0 relative">
     <div class="w-fit h-fit mt-8">
       <img
-        src="/icons/logo-text-white.png"
+        src="/icons/logo-text-white.svg"
         alt=""
         class="w-48 h-auto"
       />

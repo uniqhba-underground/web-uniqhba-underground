@@ -2,7 +2,7 @@ import type { IconType } from "svelte-icons-pack";
 import type { EventField } from "./constant";
 
 export type OurEventCategory = (
-  'mini_class' | 'workshop' | 'meetup' | 'webinar' | 'other'
+  'mini_class' | 'workshop' | 'meetup' | 'webinar' | 'other' | 'bootcamp'
 );
 
 export const OurEventCategoryMap: Record<OurEventCategory, string> = {
@@ -10,6 +10,7 @@ export const OurEventCategoryMap: Record<OurEventCategory, string> = {
   'mini_class': 'Mini Class',
   'workshop': 'Workshop',
   'webinar': 'Webinar',
+  'bootcamp': 'Bootcamp',
   'other': 'Lainnya'
 }
 
@@ -24,6 +25,7 @@ export type OurEvent = {
   name: string;
   description: string;
   date: string;
+  duration?: string;
   time: string;
   location: OurEventLocation;
   slug: EventSlug;
