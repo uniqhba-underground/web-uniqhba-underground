@@ -193,7 +193,7 @@
                 />
                 <span class="grow">{ourEvent.isPublic ? 'Terbuka untuk umum' : 'Khusus Mahasiswa UNIQHBA'}</span>
               </div>
-              {#if ourEvent.duration != ``}
+              {#if ourEvent.duration}
                 <span class="text-sm py-0.5 px-3 bg-uniqhbaunderground/20 border-uniqhbaunderground border text-uniqhbaunderground w-fit rounded-full">
                   Durasi: {ourEvent.duration}
                 </span>
