@@ -37,6 +37,7 @@ export type OurEvent = {
   isPublic?: boolean;
   partners?: string[];
   registration_link?: string;
+  withExpired?: boolean;
 }
 
 export type ParticipantCertificate = {

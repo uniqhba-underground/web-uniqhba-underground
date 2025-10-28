@@ -10,7 +10,7 @@ export const OurEvents: OurEvent[] = [
     name: 'Cyber Academy 0.1: Offensive Red Team',
     description: 'Pelatihan ini membekali mahasiswa dengan keterampilan praktis dalam penetration testing melalui pendekatan Red Team. Peserta akan belajar bagaimana seorang penyerang siber merencanakan, mengeksekusi, dan mengevaluasi serangan terhadap sistem informasi secara terstruktur',
     date: '2025-10-27',
-    duration: '3 Bulan',
+    duration: '4 Bulan',
     time: '08:00 WITA - selesai',
     location: {
       name: 'Lt. 5 Gedung Fak. Kesehatan, UNIQHBA',
@@ -27,7 +27,8 @@ export const OurEvents: OurEvent[] = [
       'HMJ Teknologi Informasi UNIQHBA',
       'CV. Bale Technology Solutions',
     ],
-    registration_link: 'https://bit.ly/46dt525'
+    registration_link: 'https://bit.ly/46dt525',
+    withExpired: false
   },
   {
     name: 'Efficient Asset Management for UI/UX Designers',
@@ -52,7 +53,8 @@ export const OurEvents: OurEvent[] = [
       'LPE Space',
       'CV. Bale Technology Solutions'
     ],
-    registration_link: 'https://s.id/FYCeT'
+    registration_link: 'https://s.id/FYCeT',
+    withExpired: true
   },
   {
     name: 'The Smart Way to Start in Cyber Security',
@@ -76,7 +78,8 @@ export const OurEvents: OurEvent[] = [
       'Petani Kode',
       'Lombok Dev'
     ],
-    registration_link: 'https://s.id/iX80S'
+    registration_link: 'https://s.id/iX80S',
+    withExpired: true
   },
   {
     name: 'Membangun Portofolio UI dengan Dribbble',
@@ -101,7 +104,8 @@ export const OurEvents: OurEvent[] = [
       'Digitelnusa',
       'UXID Lombok'
     ],
-    registration_link: ''
+    registration_link: '',
+    withExpired: true
   },
   {
     name: 'Hacker kok baik?',
@@ -121,7 +125,8 @@ export const OurEvents: OurEvent[] = [
       'CSUC UNRAM',
       'Petani Kode',
     ],
-    registration_link: ''
+    registration_link: '',
+    withExpired: true
   },
   {
     name: 'Introduction to JavaScript',
@@ -141,7 +146,8 @@ export const OurEvents: OurEvent[] = [
       'HMJ Ilmu Komputer UNIQHBA',
       'HMJ Teknologi Informasi UNIQHBA'
     ],
-    registration_link: ''
+    registration_link: '',
+    withExpired: true
   },
   {
     name: 'Loteng Dev Meet Up #3',
@@ -167,7 +173,8 @@ export const OurEvents: OurEvent[] = [
       'BlocDev',
       '@lukananakit'
     ],
-    registration_link: ''
+    registration_link: '',
+    withExpired: true
   },
 ]
 

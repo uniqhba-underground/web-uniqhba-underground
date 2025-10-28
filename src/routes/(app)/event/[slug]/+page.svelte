@@ -210,7 +210,7 @@
               {/if}
             </div>
           </div>
-          {#if isDateInFuture(ourEvent.date)}
+          {#if isDateInFuture(ourEvent.date) || !ourEvent.withExpired}
             <a
               href="{ourEvent.registration_link}"
               target="_blank"
